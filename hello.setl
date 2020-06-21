@@ -1,0 +1,6 @@
+program sample_program_number_1;
+    print('Hello, world!');
+    print(54+45);
+    print('The difference of twelve and nine is:', 12 - 9);
+    print(55*55);
+end;
