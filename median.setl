@@ -1,8 +1,18 @@
 program median;
     read(s);
-    if exists y in s | #{x in s | x < y} = #{x in s | x > y} then
-        print('Median is', y);
+    if exists x in s | #{y in s | x < y} = #{y in s | x > y} then
+        print('Median is', x);
     else
-        print('Median does not exist');
+        print('Medians are');
+        if exists a in s | #{y in s | a < y} - 1 = #{y in s | a > y} then
+            print(a);
+        else
+            print('error');
+        end;
+        if exists a in s | #{y in s | a < y} = #{y in s | a > y} - 1 then
+            print(a);
+        else
+            print('error');
+        end;
     end;
 end;
