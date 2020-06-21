@@ -1,0 +1,8 @@
+program median;
+    read(s);
+    if exists y in s | #{x in s | x < y} = #{x in s | x > y} then
+        print('Median is', y);
+    else
+        print('Median does not exist');
+    end;
+end;
