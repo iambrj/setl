@@ -1,0 +1,4 @@
+program intLength;
+    read(s);
+    print(#(str fix(s)));
+end;

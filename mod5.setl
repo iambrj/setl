@@ -1,0 +1,4 @@
+program mod5;
+    print(#{I in {1..100} | I = 5 * (I div 5)});
+    print({I in {1..100} | I = 5 * (I div 5)});
+end;
